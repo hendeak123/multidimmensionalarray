@@ -10,10 +10,15 @@ public class Main {
     }
 
     private static void printArray(int[][] multiArray) {
-        for (int countOne = 0; countOne < multiArray.length; countOne++) {
-            for (int countTwo = 0; countTwo < multiArray[countOne].length; countTwo++) {
-                System.out.println(multiArray[countOne][countTwo]);
+        try {
+            for (int countOne = 0; countOne < multiArray.length; countOne++) {
+                for (int countTwo = 0; countTwo < multiArray[countOne].length; countTwo++) {
+                    System.out.println(multiArray[countOne][countTwo]);
+                }
             }
+        }
+        catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }
